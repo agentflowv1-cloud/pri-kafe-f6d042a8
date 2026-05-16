@@ -1,1 +1,16 @@
-import React from 'react'; import { BrowserRouter, Routes, Route } from 'react-router-dom'; import HomePage from './pages/HomePage'; const App = () => { return ( <BrowserRouter> <Routes> <Route path="/" element={<HomePage />} /> </Routes> </BrowserRouter> ); }; export default App;
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import ContactForm from './components/ContactForm';
+import './styles/app.css';
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<ContactForm />} />
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;
