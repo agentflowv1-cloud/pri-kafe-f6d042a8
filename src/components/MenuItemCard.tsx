@@ -1,0 +1,1 @@
+import React from 'react'; import { MenuItem } from '../types/MenuItem'; interface Props { item: MenuItem; } const MenuItemCard: React.FC<Props> = ({ item }) => { return ( <div className="menu-item-card"> <h2>{item.name}</h2> <p>Price: ${item.price}</p> <p>{item.description}</p> </div> ); }; export default MenuItemCard;

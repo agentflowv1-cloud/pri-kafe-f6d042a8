@@ -1,0 +1,1 @@
+import React from 'react'; import { MenuItem } from '../types/MenuItem'; import MenuItemCard from './MenuItemCard'; interface Props { items: MenuItem[]; } const MenuItemsList: React.FC<Props> = ({ items }) => { return ( <div className="menu-items-list"> {items.map((item) => ( <MenuItemCard key={item.id} item={item} /> ))} </div> ); }; export default MenuItemsList;
